@@ -3,18 +3,18 @@ html {
 }
 
 body {
-  margin: 0;
-	font-size: 100%;
-  line-height: 1.8em;
-	font-family: "nimbus-sans";
-	vertical-align: baseline;
+  margin: auto;
+	font: normal 300 2em/150% "nimbus-sans", sans-serif;
 	background: url('../images/jing.jpg');
+  opacity: 0.8;
   background-size: cover;
   background-position: center;
 }
 
 h1 {
-  font-family: "adobe-caslon-pro", serif;
+  font: normal 600 5em/150% "adobe-caslon-pro", serif;
+  text-align: center;
+  color: rgb(255, 192, 203);
 }
 
 a {
