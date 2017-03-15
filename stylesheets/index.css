@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	font-size: 100%;
+  line-height: 1.8em;
+	font-family: "nimbus-sans";
+	vertical-align: baseline;
+	background: url('../images/jing.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: "adobe-caslon-pro", serif;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: color 400ms;
+}
+
+a:hover {
+  color: purple;
+  transition: color 300ms;
+}
+
+ul,
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
