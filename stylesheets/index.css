@@ -27,7 +27,7 @@ body {
   grid-area: header;
   font: normal 600 7em "adobe-caslon-pro", serif;
   text-align: center;
-  color: #B0042C;
+  color: rgb(176, 4, 44);
 }
 
 .content {
@@ -61,4 +61,14 @@ li {
   list-style-position: inside;
   margin: 0;
   padding: 0;
+}
+
+.icon {
+  fill: rgba(176, 4, 44, 0.9);
+  transition: fill 400ms ease;
+}
+
+.icon:hover {
+  fill: rgba(250, 25, 77, 0.9);
+  transition: fill 400ms ease;
 }
