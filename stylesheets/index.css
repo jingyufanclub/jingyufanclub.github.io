@@ -14,7 +14,7 @@ body {
   width: 66vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.8fr 1fr 0.5fr auto;
+  grid-template-rows: 0.8fr 1fr 1fr auto;
   grid-template-areas:
    "header"
    "content"
@@ -61,6 +61,29 @@ li {
   list-style-position: inside;
   margin: 0;
   padding: 0;
+}
+
+.social__icons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-self: end;
+  grid-gap: 6.66%;
+}
+
+.git {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.email {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.blog {
+  grid-row: 1;
+  grid-column: 4;
 }
 
 .icon {
