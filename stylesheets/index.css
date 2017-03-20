@@ -67,7 +67,7 @@ li {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  align-self: end;
+  text-align: center;
   grid-gap: 6.66%;
 }
 
