@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
   font: normal 300 1.5em/2em "Montserrat", sans-serif;
+  color: #333;
 }
 
 body {
@@ -13,12 +14,12 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(255, 192, 203);
+  color: rgb(244, 153, 170);
   transition: color 400ms;
 }
 
 a:hover {
-  color: purple;
+  color: rgb(176, 4, 44);
   transition: color 300ms;
 }
 
