@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  font: normal 300 1.5em/1.5em "Montserrat", sans-serif;
+  font: normal 300 1.5em/2em "Montserrat", sans-serif;
 }
 
 body {
@@ -33,7 +33,7 @@ ul {
   width: 66vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1.5fr auto 0.5fr;
+  grid-template-rows: 2fr 1.5fr auto 0.8fr;
   grid-template-areas:
    "header"
    "content"
