@@ -44,7 +44,7 @@ ul {
 
 .header {
   grid-area: header;
-  font: normal 700 7.2em "Libre Baskerville", serif;
+  font: normal 700 7em "Libre Baskerville", serif;
   text-align: center;
   color: rgb(176, 4, 44);
 }
