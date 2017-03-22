@@ -80,13 +80,8 @@ ul {
 .social__icons {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 6.66%;
-}
-
-.git {
-  grid-row: 1;
-  grid-column: 3;
 }
 
 .email {
@@ -94,9 +89,19 @@ ul {
   grid-column: 2;
 }
 
+.git {
+  grid-row: 1;
+  grid-column: 3;
+}
+
 .blog {
   grid-row: 1;
   grid-column: 4;
+}
+
+.cv {
+  grid-row: 1;
+  grid-column: 5;
 }
 
 .icon {
