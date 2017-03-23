@@ -89,8 +89,6 @@ ul {
 
 @supports (display: grid) {
   .container {
-    margin: 30vh auto;
-    width: 66vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1.5fr auto 0.8fr;
