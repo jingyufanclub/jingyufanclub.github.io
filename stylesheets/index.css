@@ -46,20 +46,24 @@ ul {
   text-align: center;
   color: rgb(176, 4, 44);
   height: 400px;
+  width: inherit;
 }
 
 .content {
   flex: 1 100%;
   text-align: left;
   height: auto;
+  width: inherit;
 }
 
 .links {
   flex: 1 100%;
+  width: inherit;
 }
 .footer {
   flex: 1 100%;
   text-align: center;
+  width: inherit;
 }
 
 .projects ul {
