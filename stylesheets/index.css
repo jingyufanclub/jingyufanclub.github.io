@@ -12,6 +12,10 @@ body {
   color: #222;
 }
 
+.smalltype {
+  font: normal 0.5em/1.6em "Montserrat", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: rgb(244, 153, 170);
@@ -32,49 +36,35 @@ ul {
 .container {
   margin: 30vh auto;
   width: 66vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1.5fr auto 0.8fr;
-  grid-template-areas:
-   "header"
-   "content"
-   "links"
-   "footer";
-   grid-gap: 6.66%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .header {
-  grid-area: header;
+  flex: 1 100%;
   font: normal 700 7em "Libre Baskerville", serif;
   text-align: center;
   color: rgb(176, 4, 44);
+  height: 400px;
 }
 
 .content {
-  grid-area: content;
+  flex: 1 100%;
+  text-align: left;
+  height: 450px;
 }
 
 .links {
-  grid-area: links;
-  text-align: center;
+  flex: 1 100%;
 }
-
 .footer {
-  grid-area: footer;
+  flex: 1 100%;
   text-align: center;
-  align-self: end;
 }
 
 .projects ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 6.66%;
   font: normal 1.5em/1.2em "Lobster", cursive;
   text-align: left;
-}
-
-.smalltype {
-  font: normal 0.5em/1.6em "Montserrat", sans-serif;
 }
 
 .social__icons {
@@ -87,7 +77,58 @@ ul {
   margin: 10px auto;
 }
 
+.icon {
+  fill: rgba(176, 4, 44, 0.9);
+  transition: fill 400ms ease;
+}
+
+.icon:hover {
+  fill: rgba(255, 0, 23, 0.9);
+  transition: fill 400ms ease;
+}
+
 @supports (display: grid) {
+  .container {
+    margin: 30vh auto;
+    width: 66vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr auto 0.8fr;
+    grid-template-areas:
+     "header"
+     "content"
+     "links"
+     "footer";
+     grid-gap: 6.66%;
+  }
+
+  .header {
+    grid-area: header;
+    height: inherit;
+  }
+
+  .content {
+    grid-area: content;
+    height: inherit;
+  }
+
+  .links {
+    grid-area: links;
+    height: inherit;
+  }
+
+  .footer {
+    grid-area: footer;
+    height: inherit;
+    align-self: end;
+  }
+
+  .projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 6.66%;
+  }
+
   .social__icons {
     display: grid;
     grid-template-rows: 1fr;
@@ -115,14 +156,4 @@ ul {
     grid-row: 1;
     grid-column: 5;
   }
-}
-
-.icon {
-  fill: rgba(176, 4, 44, 0.9);
-  transition: fill 400ms ease;
-}
-
-.icon:hover {
-  fill: rgba(255, 0, 23, 0.9);
-  transition: fill 400ms ease;
 }
