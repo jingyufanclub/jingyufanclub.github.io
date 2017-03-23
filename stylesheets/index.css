@@ -170,6 +170,13 @@ ul {
     font-size: 20px;
   }
 
+  .container {
+    margin: 20vh auto;
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .header {
     height: 200px;
     font-size: 5em;
