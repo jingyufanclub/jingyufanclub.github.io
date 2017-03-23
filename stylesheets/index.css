@@ -165,8 +165,8 @@ ul {
   }
 }
 
-@media all and (max-width: 666px) and (min-width: 320px) {
-  body{
+@media all and (max-width: 667px) and (min-width: 320px) {
+  body {
     font-size: 18px;
   }
 
