@@ -50,8 +50,9 @@ ul {
 
 .content {
   flex: 1 100%;
-  text-align: justify;
+  text-align: left;
   height: auto;
+  align-items: stretch
 }
 
 .links {
