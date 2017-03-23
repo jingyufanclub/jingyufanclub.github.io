@@ -12,15 +12,6 @@ body {
   color: #222;
 }
 
-@media all and (max-width: 600px) and (min-width: 320px) {
-  body{
-    font-size: 18px;
-  }
-  .header {
-    height: 200px;
-  }
-}
-
 .smalltype {
   font: normal 0.5em/1.6em "Montserrat", sans-serif;
 }
@@ -82,7 +73,7 @@ ul {
 
 .projects li {
   flex: 1 0 300px;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .social__icons {
@@ -171,5 +162,15 @@ ul {
   .cv {
     grid-row: 1;
     grid-column: 5;
+  }
+}
+
+@media all and (max-width: 567px) and (min-width: 320px) {
+  body{
+    font-size: 18px;
+  }
+
+  .header {
+    height: 200px;
   }
 }
