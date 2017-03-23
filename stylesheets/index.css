@@ -73,7 +73,7 @@ ul {
 
 .projects li {
   flex: 1 0 300px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .social__icons {
