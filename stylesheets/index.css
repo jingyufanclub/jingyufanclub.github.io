@@ -165,7 +165,7 @@ ul {
   }
 }
 
-@media all and (max-width: 567px) and (min-width: 320px) {
+@media all and (max-width: 666px) and (min-width: 320px) {
   body{
     font-size: 18px;
   }
@@ -173,8 +173,6 @@ ul {
   .container {
     margin: 10vh auto;
     width: 90vw;
-    display: flex;
-    flex-flow: row wrap;
   }
 
   .header {
