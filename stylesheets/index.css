@@ -51,7 +51,7 @@ ul {
 .content {
   flex: 1 100%;
   text-align: left;
-  height: 450px;
+  height: auto;
 }
 
 .links {
@@ -63,8 +63,15 @@ ul {
 }
 
 .projects ul {
+  display: flex;
+  flex-flow: row wrap;
   font: normal 1.5em/1.2em "Lobster", cursive;
   text-align: left;
+}
+
+.projects li {
+  flex: 1 0 320px;
+  padding: 10px;
 }
 
 .social__icons {
