@@ -13,7 +13,7 @@ body {
 }
 
 .smalltype {
-  font: normal 0.5em/1.6em "Montserrat", sans-serif;
+  font: normal 0.6em/1.6em "Montserrat", sans-serif;
 }
 
 a {
@@ -172,5 +172,7 @@ ul {
 
   .header {
     height: 200px;
+    font-size: 6em;
+    text-align: left;
   }
 }
