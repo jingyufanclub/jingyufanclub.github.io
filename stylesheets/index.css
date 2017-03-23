@@ -78,9 +78,7 @@ ul {
 }
 
 .social__icons {
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: flex-end;
   align-items: flex-end;
   height: 200px;
 }
