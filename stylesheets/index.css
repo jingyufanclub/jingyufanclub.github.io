@@ -46,14 +46,12 @@ ul {
   text-align: center;
   color: rgb(176, 4, 44);
   height: 400px;
-  width: inherit;
 }
 
 .content {
   flex: 1 100%;
-  text-align: left;
+  text-align: justify;
   height: auto;
-  width: inherit;
 }
 
 .links {
