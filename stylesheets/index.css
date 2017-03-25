@@ -8,12 +8,12 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0;
-  font: normal 300 3.5vw/2em "Montserrat", sans-serif;
+  font: normal 300 3.5vmin/2em "Montserrat", sans-serif;
   color: #222;
 }
 
 .smalltype {
-  font: normal 3vw/1.6em "Montserrat", sans-serif;
+  font: normal 2.8vmin/1.6em "Montserrat", sans-serif;
 }
 
 a {
@@ -42,7 +42,7 @@ ul {
 
 .header {
   flex: 1 100%;
-  font: normal 700 10vw "Libre Baskerville", serif;
+  font: normal 700 13vw "Libre Baskerville", serif;
   text-align: center;
   color: rgb(176, 4, 44);
   height: 60vh;
@@ -66,7 +66,7 @@ ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  font: normal 5vw/1.2em "Lobster", cursive;
+  font: normal 4vmin/1.2em "Lobster", cursive;
 }
 
 .projects li {
@@ -165,7 +165,7 @@ ul {
 
 @media all and (max-width: 667px) and (min-width: 320px) {
   body {
-    font-size: 4vw;
+    font-size: 4vmin;
   }
 
   .container {
