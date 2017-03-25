@@ -164,6 +164,10 @@ ul {
 }
 
 @media all and (max-width: 667px) and (min-width: 320px) {
+  body {
+    font-size: 4vw;
+  }
+
   .container {
     width: 85vw;
   }
