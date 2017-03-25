@@ -175,4 +175,8 @@ ul {
     width: 85vw;
   }
 
+  .header {
+    height: 40vh;
+  }
+
 }
