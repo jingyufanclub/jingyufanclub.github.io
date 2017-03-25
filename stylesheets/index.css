@@ -42,7 +42,7 @@ ul {
 
 .header {
   flex: 1 100%;
-  font: normal 700 13vw "Libre Baskerville", serif;
+  font: normal 700 20vw "Libre Baskerville", serif;
   text-align: center;
   color: rgb(176, 4, 44);
   height: 60vh;
