@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0;
-  font: normal 300 3vmin/2em "Montserrat", sans-serif;
+  font: normal 300 3.5vmin/2em "Montserrat", sans-serif;
   color: #222;
 }
 
@@ -56,24 +56,22 @@ ul {
 
 .links {
   flex: 1 100%;
-  width: inherit;
 }
 .footer {
   flex: 1 100%;
   text-align: center;
-  width: inherit;
 }
 
 .projects ul {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
   font: normal 1.5em/1.2em "Lobster", cursive;
-  text-align: left;
 }
 
 .projects li {
-  flex: 1 0 300px;
-  padding-right: 10px;
+  flex: 1 0 320px;
+  padding-right: 20px;
 }
 
 .social__icons {
@@ -171,7 +169,6 @@ ul {
   }
 
   .container {
-    margin: 15vh auto;
     width: 85vw;
   }
 
