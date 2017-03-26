@@ -174,10 +174,12 @@ ul {
 
   .smalltype {
     font-size: 4vw;
+    line-height: 1.6em;
   }
 
   .projects ul {
     font-size: 5vw;
+    line-height: 1.6em;
   }
 
   .container {
@@ -190,6 +192,9 @@ ul {
     margin-bottom: 8vh;
   }
 
+  .social__icons {
+    height: 20vh;
+  }
   .icon {
     height: 20px;
   }
