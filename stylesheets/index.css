@@ -186,7 +186,8 @@ ul {
   }
 
   .header {
-    height: 25vh;
+    height: auto;
+    margin-bottom: 10vh;
   }
 
   .social__icons {
