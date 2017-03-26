@@ -56,7 +56,9 @@ ul {
 
 .links {
   flex: 1 100%;
+  height: auto;
 }
+
 .footer {
   flex: 1 100%;
   text-align: center;
@@ -99,7 +101,7 @@ ul {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1.5fr auto 0.8fr;
+    grid-template-rows: 2fr 1.5fr auto .75fr;
     grid-template-areas:
      "header"
      "content"
@@ -178,10 +180,15 @@ ul {
   }
 
   .container {
-    width: 85vw;
+    margin: 15vh auto;
+    width: 90vw;
   }
 
   .header {
-    height: 40vh;
+    height: 25vh;
+  }
+
+  .footer {
+    height: 15vh;
   }
 }
