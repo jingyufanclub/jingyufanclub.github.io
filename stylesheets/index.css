@@ -62,6 +62,7 @@ ul {
 .footer {
   flex: 1 100%;
   text-align: center;
+  height: auto;
 }
 
 .projects ul {
@@ -188,7 +189,11 @@ ul {
     height: 25vh;
   }
 
-  .footer {
-    height: 15vh;
+  .social__icons {
+    height: 12vh;
+  }
+
+  .icon {
+    height: 20px;
   }
 }
