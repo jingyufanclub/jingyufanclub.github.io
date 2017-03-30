@@ -98,6 +98,17 @@ ul {
   transition: fill 400ms ease;
 }
 
+.small-gitmark {
+  fill: rgba(244, 153, 170, 0.9);
+  transition: fill 400ms ease;
+  height: 18px;
+}
+
+.small-gitmark:hover {
+  fill: rgba(176, 4, 44, 0.9);
+  transition: fill 400ms ease;
+}
+
 @supports (display: grid) {
   .container {
     display: grid;
@@ -138,7 +149,7 @@ ul {
     grid-gap: 6.66%;
   }
 
-  .social__icons {
+  .social-icons {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(6, 1fr);
