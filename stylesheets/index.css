@@ -35,9 +35,11 @@ ul {
 
 ::-moz-selection {
   color: rgb(255, 204, 255);
+  background: #000;
 }
 ::selection {
   color: rgb(255, 204, 255);
+  background: #000;
 }
 
 .container {
