@@ -42,14 +42,14 @@ ul {
   background: #000;
 }
 
-.container {
+main {
   margin: 30vh auto;
   width: 66vw;
   display: flex;
   flex-flow: row wrap;
 }
 
-.header {
+header {
   flex: 1 100%;
   font: normal 700 25vw "Libre Baskerville", serif;
   text-align: center;
@@ -68,7 +68,7 @@ ul {
   height: auto;
 }
 
-.footer {
+footer {
   flex: 1 100%;
   text-align: center;
   height: auto;
@@ -108,7 +108,7 @@ ul {
 }
 
 @supports (display: grid) {
-  .container {
+  main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1.5fr auto .75fr;
@@ -120,7 +120,7 @@ ul {
      grid-gap: 6.66%;
   }
 
-  .header {
+  header {
     grid-area: header;
     height: inherit;
   }
@@ -135,7 +135,7 @@ ul {
     height: inherit;
   }
 
-  .footer {
+  footer {
     grid-area: footer;
     height: inherit;
     align-self: end;
@@ -179,6 +179,8 @@ ul {
 @media all and (max-width: 667px) and (min-width: 320px) {
   body {
     font-size: 4.5vw;
+    background-size: contain;
+    background-position: initial;
   }
 
   .smalltype {
@@ -191,12 +193,12 @@ ul {
     line-height: 1.6em;
   }
 
-  .container {
+  main {
     margin: 15vh auto;
     width: 90vw;
   }
 
-  .header {
+  header {
     height: auto;
     margin-bottom: 8vh;
   }
