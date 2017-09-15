@@ -3,6 +3,11 @@ html {
   font-size: 100%;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 body {
 	background: url('../images/jing-jing.jpg');
   background-size: cover;
@@ -121,41 +126,40 @@ footer {
 @supports (display: grid) {
   main {
     display: grid;
+    margin: 0 auto 3em;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1.5fr auto .75fr;
+    grid-template-rows: 100vh 2.5fr auto 1fr;
     grid-template-areas:
      "header"
      "content"
      "links"
      "footer";
-     grid-gap: 1em;
+     grid-gap: 1%;
   }
 
   header {
     grid-area: header;
-    height: inherit;
+    align-self: center;
+    height: auto;
   }
 
   .content {
     grid-area: content;
-    height: inherit;
   }
 
   .links {
     grid-area: links;
-    height: inherit;
   }
 
   footer {
     grid-area: footer;
-    height: inherit;
     align-self: end;
   }
 
   .projects ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 1%;
   }
 
   .social-icons {
@@ -163,7 +167,7 @@ footer {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5%;
-    height: inherit;
+    height: auto;
   }
 
   .email {
@@ -196,22 +200,17 @@ footer {
   body {
     background-size: contain;
     background-position: initial;
-
   }
 
   main {
-    margin: 15vw auto 0;
+    margin: 15vw auto 5vw;
     width: 90vw;
-    grid-template-rows: max-content max-content max-content 15vw;
+    grid-template-rows: max-content max-content max-content 5em;
   }
 
   header {
     height: auto;
     margin-bottom: 8vh;
-  }
-
-  footer {
-    align-self: end;
   }
 
   .icon {
