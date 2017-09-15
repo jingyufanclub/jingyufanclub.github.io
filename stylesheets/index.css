@@ -8,12 +8,17 @@ body {
   background-size: cover;
   background-position: center;
   margin: 0;
-  font: normal 300 2vw/2em "Montserrat", sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1em + 1vw);
+  line-height: 2em;
   color: #222;
 }
 
 .smalltype {
-  font: normal 1.6vw/2em "Montserrat", sans-serif;
+  font-size: calc(0.6em + 0.7vw);
+  line-height: 1.5em;
 }
 
 a {
@@ -43,7 +48,7 @@ ul {
 }
 
 main {
-  margin: 30vh auto;
+  margin: 25vw auto 3em;
   width: 66vw;
   display: flex;
   flex-flow: row wrap;
@@ -78,7 +83,13 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  font: normal 2.5vw/2em "Lobster", cursive;
+}
+
+.projects h1 {
+  font-family: "Lobster", cursive;
+  font-style: normal;
+  font-size: calc(0.8em + 1vw);
+  line-height: 1em;
 }
 
 .projects li {
@@ -117,7 +128,7 @@ footer {
      "content"
      "links"
      "footer";
-     grid-gap: 6.66%;
+     grid-gap: 1em;
   }
 
   header {
@@ -144,7 +155,7 @@ footer {
   .projects ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 6.66%;
+    grid-gap: 1em;
   }
 
   .social-icons {
@@ -181,26 +192,17 @@ footer {
   }
 }
 
-@media all and (max-width: 667px) and (min-width: 320px) {
+@media all and (max-width: 768px) and (min-width: 320px) {
   body {
-    font-size: 4.5vw;
-    background-size: auto 100vh;
+    background-size: contain;
     background-position: initial;
-  }
 
-  .smalltype {
-    font-size: 4vw;
-    line-height: 1.6em;
-  }
-
-  .projects ul {
-    font-size: 5vw;
-    line-height: 1.6em;
   }
 
   main {
-    margin: 15vh auto;
+    margin: 15vw auto 0;
     width: 90vw;
+    grid-template-rows: max-content max-content max-content 15vw;
   }
 
   header {
@@ -208,9 +210,10 @@ footer {
     margin-bottom: 8vh;
   }
 
-  .social-icons {
-    height: 20vh;
+  footer {
+    align-self: end;
   }
+
   .icon {
     height: 20px;
   }
