@@ -47,19 +47,19 @@ ul {
   color: rgb(255, 204, 255);
   background: #000;
 }
+
 ::selection {
   color: rgb(255, 204, 255);
   background: #000;
 }
 
-main {
+.main {
   margin: 25vw auto 3em;
   width: 66vw;
   display: flex;
-  flex-flow: row wrap;
 }
 
-header {
+.header {
   flex: 1 100%;
   font: normal 700 25vw "Libre Baskerville", serif;
   text-align: center;
@@ -67,18 +67,12 @@ header {
   height: 75vh;
 }
 
-.content {
-  flex: 1 100%;
-  text-align: left;
-  height: auto;
-}
-
 .links {
   flex: 1 100%;
   height: auto;
 }
 
-footer {
+.footer {
   flex: 1 100%;
   text-align: center;
   height: auto;
@@ -108,7 +102,7 @@ footer {
   height: 25vh;
 }
 
-.email, .git, .blog, .cv, .tinyletter {
+.email, .git, .blog, .tinyletter {
   margin: 10px auto;
 }
 
@@ -124,34 +118,28 @@ footer {
 }
 
 @supports (display: grid) {
-  main {
+  .main {
     display: grid;
     margin: 0 auto 3em;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 2.5fr auto 1fr;
+    grid-template-rows: 100vh 1fr 0.25fr;
     grid-template-areas:
      "header"
-     "content"
      "links"
      "footer";
-     grid-gap: 2%;
   }
 
-  header {
+  .header {
     grid-area: header;
     align-self: center;
     height: auto;
-  }
-
-  .content {
-    grid-area: content;
   }
 
   .links {
     grid-area: links;
   }
 
-  footer {
+  .footer {
     grid-area: footer;
     align-self: end;
   }
@@ -165,7 +153,7 @@ footer {
   .social-icons {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5%;
     height: auto;
   }
@@ -185,14 +173,9 @@ footer {
     grid-column: 3 / 4;
   }
 
-  .cv {
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-  }
-
   .tinyletter {
     grid-row: 1 / 2;
-    grid-column: 5 / 6;
+    grid-column: 4 / 5;
   }
 }
 
@@ -202,13 +185,14 @@ footer {
     background-position: initial;
   }
 
-  main {
+  .main {
+    display: grid;
+    grid-template-rows: max-content max-content 5em;
     margin: 15vw auto 5vw;
     width: 90vw;
-    grid-template-rows: max-content max-content max-content 5em;
   }
 
-  header {
+  .header {
     height: auto;
     margin-bottom: 8vh;
   }
