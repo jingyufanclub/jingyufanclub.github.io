@@ -140,7 +140,7 @@ a:hover {
   transition: fill 400ms ease;
 }
 
-@media all and (max-width: 710px) {
+@media all and (max-width: 768px) {
   body {
     background-size: contain;
     background-position: initial;
@@ -156,6 +156,60 @@ a:hover {
   .header {
     height: auto;
     align-self: center;
+  }
+
+  .icon {
+    height: 18px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  body {
+    background-size: cover;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85vw;
+    height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+  }
+
+  .links {
+    height: 20%;
+  }
+
+  .projects ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects li {
+    white-space: nowrap;
+    padding-right: 4ch;
+  }
+
+  .footer {
+    height: 40%;
+    padding: 0 0 2ch;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .icon {
