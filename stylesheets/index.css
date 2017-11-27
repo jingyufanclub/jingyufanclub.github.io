@@ -7,12 +7,12 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
 	background: url('../images/jing-jing.jpg');
   background-size: cover;
   background-position: center;
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -21,9 +21,10 @@ body {
   color: #222;
 }
 
-.smalltype {
-  font-size: calc(0.6em + 0.7vw);
-  line-height: 1.5em;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -37,12 +38,6 @@ a:hover {
   transition: color 300ms;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 ::-moz-selection {
   color: rgb(255, 204, 255);
   background: #000;
@@ -53,35 +48,41 @@ ul {
   background: #000;
 }
 
+.smalltype {
+  font-size: calc(0.6em + 0.7vw);
+  line-height: 1.5em;
+}
+
 .main {
-  margin: 25vw auto 3em;
-  width: 66vw;
-  display: flex;
+  display: grid;
+  margin: auto;
+  width: 80vw;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh 4fr 1fr;
+  grid-template-areas:
+   "header"
+   "links"
+   "footer";
 }
 
 .header {
-  flex: 1 100%;
+  grid-area: header;
+  align-self: center;
+  height: auto;
   font: normal 700 25vw "Libre Baskerville", serif;
-  text-align: center;
   color: rgb(176, 4, 44);
-  height: 75vh;
 }
 
 .links {
-  flex: 1 100%;
-  height: auto;
-}
-
-.footer {
-  flex: 1 100%;
-  text-align: center;
-  height: auto;
+  grid-area: links;
+  justify-items: center;
 }
 
 .projects ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-column-gap: 2.5%;
 }
 
 .projects h1 {
@@ -91,19 +92,41 @@ ul {
   line-height: 1em;
 }
 
-.projects li {
-  flex: 1 0 320px;
-  padding-right: 20px;
+.footer {
+  grid-area: footer;
+  justify-items: center;
+  align-self: end;
+  padding: 2ch;
+  width: 100%;
 }
 
 .social-icons {
-  display: flex;
-  align-items: flex-end;
-  height: 25vh;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5%;
+  height: auto;
 }
 
-.email, .git, .blog, .tinyletter {
-  margin: 10px auto;
+.email {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.git {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.blog {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.tinyletter {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
 }
 
 .icon {
@@ -117,69 +140,7 @@ ul {
   transition: fill 400ms ease;
 }
 
-@supports (display: grid) {
-  .main {
-    display: grid;
-    margin: 0 auto 3em;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh 1fr 0.25fr;
-    grid-template-areas:
-     "header"
-     "links"
-     "footer";
-  }
-
-  .header {
-    grid-area: header;
-    align-self: center;
-    height: auto;
-  }
-
-  .links {
-    grid-area: links;
-  }
-
-  .footer {
-    grid-area: footer;
-    align-self: end;
-  }
-
-  .projects ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-column-gap: 2.5%;
-  }
-
-  .social-icons {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5%;
-    height: auto;
-  }
-
-  .email {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-
-  .git {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .blog {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .tinyletter {
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-  }
-}
-
-@media all and (max-width: 768px) and (min-width: 320px) {
+@media all and (max-width: 710px) {
   body {
     background-size: contain;
     background-position: initial;
@@ -187,17 +148,17 @@ ul {
 
   .main {
     display: grid;
-    grid-template-rows: max-content max-content 5em;
-    margin: 15vw auto 5vw;
+    grid-template-rows: 1fr 2fr 6ch;
+    margin: auto;
     width: 90vw;
   }
 
   .header {
     height: auto;
-    margin-bottom: 8vh;
+    align-self: center;
   }
 
   .icon {
-    height: 20px;
+    height: 18px;
   }
 }
