@@ -168,6 +168,12 @@ a:hover {
     background-size: cover;
   }
 
+  .projects h1 {
+    font-size: 1.4em;
+  }
+  .smalltype {
+    font-size: 1.2em;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -180,12 +186,12 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 50%;
+    height: 40%;
     width: 100%;
   }
 
   .links {
-    height: 30%;
+    height: 40%;
   }
 
   .projects ul {
