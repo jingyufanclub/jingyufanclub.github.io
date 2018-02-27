@@ -172,7 +172,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 85vw;
+    width: 82vw;
     height: 100vh;
   }
 
@@ -180,12 +180,12 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 40%;
+    height: 50%;
     width: 100%;
   }
 
   .links {
-    height: 20%;
+    height: 30%;
   }
 
   .projects ul {
@@ -199,17 +199,18 @@ a:hover {
   }
 
   .footer {
-    height: 40%;
+    height: 20%;
     padding: 0 0 2ch;
     display: flex;
     align-items: flex-end;
   }
 
   .social-icons {
-    display: flex;
+    position: fixed;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .icon {
