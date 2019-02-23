@@ -1,3 +1,9 @@
+@font-face {
+font-family: 'Bianco Sans';
+src: url('..//fonts/BiancoSansNew.woff');
+}
+
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -13,7 +19,7 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: 'Bianco Sans', 'Montserrat', Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: calc(1em + 1vw);
@@ -29,7 +35,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(255, 153, 153);
+  color: #fbd3d1;
   transition: color 400ms;
 }
 
