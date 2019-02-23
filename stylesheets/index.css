@@ -110,7 +110,7 @@ a:hover {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 5%;
   height: auto;
 }
@@ -133,6 +133,11 @@ a:hover {
 .tinyletter {
   grid-row: 1 / 2;
   grid-column: 4 / 5;
+}
+
+.vimeo {
+  grid-row: 1 / 2;
+  grid-column: 5 / 6;
 }
 
 .icon {
