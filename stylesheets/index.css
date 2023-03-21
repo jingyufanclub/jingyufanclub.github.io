@@ -1,35 +1,36 @@
 @font-face {
-font-family: 'Bianco Sans';
-src: url('../fonts/BiancoSansNew.woff');
+  font-family: "Bianco Sans";
+  src: url("../fonts/BiancoSansNew.woff");
 }
 
 @font-face {
   font-family: "Kippenberger";
-  src: url('../fonts/kippenberger-normal-400.ttf')
+  src: url("../fonts/kippenberger-normal-400.ttf");
 }
-
 
 html {
   box-sizing: border-box;
   font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-	background: url('../images/jing-jing.jpg');
+  background: url("../images/jing-jing.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
   padding: 0;
-  font-family: 'Kippenberger', 'Bianco Sans', Helvetica, sans-serif;
+  font-family: "Kippenberger", "Bianco Sans", Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: calc(1em + 1vw);
   line-height: 2em;
-  color: #fff;
+  color: rgb(255, 204, 255);
 }
 
 ul {
@@ -40,23 +41,28 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fbd3d1;
+  color: rgb(176, 4, 44);
   transition: color 400ms;
 }
 
 a:hover {
-  color: rgb(176, 4, 44);
+  color: rgb(255, 204, 255);
   transition: color 300ms;
 }
 
-::-moz-selection {
+mark {
   color: rgb(255, 204, 255);
   background: #000;
 }
 
+::-moz-selection {
+  color: #000;
+  background: rgb(223, 255, 0);
+}
+
 ::selection {
-  color: rgb(255, 204, 255);
-  background: #000;
+  color: #000;
+  background: rgb(223, 255, 0);
 }
 
 .smalltype {
@@ -70,11 +76,11 @@ a:hover {
   width: 80vw;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh 4fr 1fr;
+  grid-template-rows: 100dvh 4fr 1fr;
   grid-template-areas:
-   "header"
-   "links"
-   "footer";
+    "header"
+    "links"
+    "footer";
 }
 
 .header {
@@ -200,7 +206,7 @@ a:hover {
     flex-direction: column;
     margin: auto;
     width: 82vw;
-    height: 100vh;
+    height: 100dvh;
   }
 
   .header {
@@ -229,12 +235,13 @@ a:hover {
     height: 20%;
     padding: 0 0 2ch;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .social-icons {
     position: fixed;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
+    grid-gap: 10%;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
