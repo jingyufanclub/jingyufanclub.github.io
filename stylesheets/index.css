@@ -121,39 +121,29 @@ mark {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5%;
   height: auto;
 }
 
-.email {
+.git {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 
-.git {
+.blog {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 }
 
-.blog {
+.codepen {
   grid-row: 1 / 2;
   grid-column: 3 / 4;
 }
 
-.vimeo {
-  grid-row: 1 / 2;
-  grid-column: 4 / 5;
-}
-
-.codepen {
-  grid-row: 1 / 2;
-  grid-column: 5 / 6;
-}
-
 .tinyletter {
   grid-row: 1 / 2;
-  grid-column: 6 / 7;
+  grid-column: 4 / 5;
 }
 
 .icon {
