@@ -76,7 +76,7 @@ mark {
   width: 80vw;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 100dvh 4fr 1fr;
+  grid-template-rows: 100dvh 5fr 1fr;
   grid-template-areas:
     "header"
     "links"
@@ -121,29 +121,8 @@ mark {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5%;
+  grid-template-columns: 1fr;
   height: auto;
-}
-
-.git {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-}
-
-.blog {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-}
-
-.codepen {
-  grid-row: 1 / 2;
-  grid-column: 3 / 4;
-}
-
-.tinyletter {
-  grid-row: 1 / 2;
-  grid-column: 4 / 5;
 }
 
 .icon {
